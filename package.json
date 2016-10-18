@@ -4,7 +4,7 @@
   "description": "Working through Daniel Shiffman's The Nature of Code. Made a simple CA generator to try out different combinations.",
   "main": "sketch.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel sketch.js -d lib"
   },
   "repository": {
     "type": "git",
@@ -16,10 +16,8 @@
     "url": "https://github.com/epiqueras/8-bit-cellular-automaton-generator/issues"
   },
   "homepage": "https://github.com/epiqueras/8-bit-cellular-automaton-generator#readme",
-  "scripts": {
-    "build": "babel sketch.js -d lib"
-  },
   "devDependencies": {
-    "babel-cli": "^6.16.0"
+    "babel-cli": "^6.16.0",
+    "babel-preset-es2015": "^6.16.0"
   }
 }
