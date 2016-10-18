@@ -27,13 +27,13 @@ function setFormDefaults() {
     } else if (e.type !== 'radio') { // Don't change radio elements.
       switch(e.name) {
         case 'cells':
-          e.value = '101';
+          e.value = '505';
           break;
         case 'rows':
-          e.value = '101';
+          e.value = '505';
           break;
         case 'initialStates':
-          e.value = '00000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000';
+          e.value = '00000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000'.repeat(5);
           break;
       }
     }
