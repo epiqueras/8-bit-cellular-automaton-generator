@@ -1,0 +1,25 @@
+{
+  "name": "8-bit-cellular-automaton-generator",
+  "version": "1.0.0",
+  "description": "Working through Daniel Shiffman's The Nature of Code. Made a simple CA generator to try out different combinations.",
+  "main": "sketch.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/epiqueras/8-bit-cellular-automaton-generator.git"
+  },
+  "author": "Enrique Piqueras",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/epiqueras/8-bit-cellular-automaton-generator/issues"
+  },
+  "homepage": "https://github.com/epiqueras/8-bit-cellular-automaton-generator#readme",
+  "scripts": {
+    "build": "babel sketch.js -d lib"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.16.0"
+  }
+}
