@@ -62,22 +62,22 @@ function getFormValues(event) {
   // Validate inputs.
   if (data.cells > 1000 || data.cells < 1) {
     text('Invalid cell number.', width / 2 - 58, 20);
-    return;
+    return false;
   }
   if (data.rows > 1000 || data.rows < 1) {
     text('Invalid rows number.', width / 2 - 58, 20);
-    return;
+    return false;
   }
   if (data.initialStates.length !== data.cells) {
     text('Cell count must equal initial states length.', width / 2 - 58, 20);
-    return;
+    return false;
   }
 
   // Update CA.
   CA.updateData(data);
   // Scroll to bottom at rate similar to drawing speed.
   $("html, body").animate({ scrollTop: $(document).height() }, data.rows / 30 * 1000);
-  return;
+  return false;
 }
 
 class CellularAutomaton {
